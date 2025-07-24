@@ -56,4 +56,10 @@ function SoundEffect(key){
             default:
                 break;
         }
+    var colorChange = document.querySelector("." + key);
+    colorChange.style.opacity = 0.1;
+
+    setTimeout(function(){
+        colorChange.style.opacity = 1;
+    }, 100);
 }
